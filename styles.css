@@ -1,8 +1,23 @@
 body {
+  font-family: sans-serif;
   position: relative;
   background-color: #f6f7f8;
+  position: relative;
+}
+h1 {
+  color: rgb(85, 85, 85);
+}
+p {
+  color: rgb(128, 128, 128);
 }
 
+.btn_yellow {
+  border-radius: 10px;
+  padding: 6px 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: rgba(243, 192, 73, 1);
+}
 img {
   display: block;
   max-width: 100%;
@@ -48,4 +63,45 @@ img {
   font-size: 20px;
   color: white;
   text-decoration: none;
+}
+.input {
+  border-radius: 10px;
+  padding: 6px 20px;
+  width: 200px;
+  align-items: center;
+}
+
+.images-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 100px;
+  align-items: center;
+  gap: 5px;
+}
+
+.images-container__item {
+  overflow: hidden;
+  height: 100%;
+}
+
+.images-container__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.paginator-btns {
+  display: flex;
+  gap: 5px;
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+
+.btn.active {
+  border-color: #f3c049;
 }

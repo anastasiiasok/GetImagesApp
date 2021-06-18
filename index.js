@@ -9,7 +9,7 @@ class Popup {
       <div class="popup">
         <div class="popup__body">
           <div class="popup__content">
-            <a href="" class="popup__close">x</a>
+          <a href="" class="popup__close">x</a>
             <div class="popup__text">
             
             </div>
@@ -37,7 +37,7 @@ class Popup {
 
   open() {
     this.dom.classList.add("active");
-    console.log(open());
+    // console.log();
   }
 
   close() {
@@ -72,7 +72,7 @@ class Paginator {
       this.btns.push(btn);
       whereToInsertDom.append(btn);
     }
-    console.log(this.btns);
+    // console.log(this.btns);
   }
 
   clickBtn({ id, btn }) {
